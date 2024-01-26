@@ -1,0 +1,276 @@
+body {
+    font-family: 'Istok Web', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    color: #624DE7;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+p {
+    color: #575757;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    background-color: #4733C9;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    justify-content: center;
+    text-align: left;
+    margin-left: 100px;
+    color: #FFF;
+}
+
+.intro h1 {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+}
+.intro p{
+    color: #FFF;
+}
+.request {
+    background-color: #FFF;
+    width: 200px;
+    height: 53px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #29282B;
+    background-color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.request:hover {
+    transform: scale(1.05);
+}
+
+.services {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.services_collection {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 30px;
+    border-radius: 5px 5px 50px 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 50px 0px #F7EDFF;
+    width: 200px;
+    height: 200px;
+    transition: all 0.5s ease;
+}
+.service a{
+    color: #29282B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+}
+.service:hover{
+    background: #624DE7;
+    transform: translateY(-10px);
+}
+.service:hover *{
+    color: #FFF;
+}
+
+.about_us{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 150px;
+}
+.about_us h1{
+    text-align: left;
+}
+
+.about_us .list p{
+    margin: 0;
+    text-align: left;
+}
+
+.experiences{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+    font-size: x-large;
+}
+.experiences div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.experiences div p{
+    margin: 0;
+}
+.experiences .timer {
+    padding-top: 15px;
+}
+
+.projects {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 150px;
+    gap: 0px;
+}
+
+.projects .projects_collection{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: left;
+}
+.projects .projects_collection img{
+    width: 45%;
+    height: 200px;
+}
+.projects .project_info{
+    width: 35%;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+.parallax-container {
+    margin-top: 50px;
+    background: url("images/s.jpg") repeat fixed 100%;
+}
+.parallax-inner{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+@media (max-width:720px) {
+    .intro{
+        margin-left: 50px;
+    }
+    .services {
+        width: 90%;
+        
+    }
+    .service {
+        display: flex;
+        padding: 20px;
+        width: 180px;
+        height: 200px;
+    }
+    .about_us{
+        width: 80%;
+    }
+    .experiences{
+        gap: 70px;
+    }
+    .projects .project_info{
+        width: 50%; 
+    }
+}
+@media (max-width:500px) {
+    .background{
+        height: 80vh;
+    }
+    .intro{
+        height: 70vh;
+    }
+    .about_us{
+        width: 90%;
+    }
+
+    .experiences{
+        gap: 25px;
+        font-size: large;
+    }
+
+    .projects{
+        flex-direction: column-reverse;
+    }
+    .projects .projects_collection{
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: left;
+    }
+    .projects .projects_collection img{
+        width: 45%;
+        height: 200px;
+    }
+    .projects .project_info{
+        width: 90%;
+        text-align: left;
+    }
+}
+@media (max-width:400px) {
+
+ .intro{
+    margin-left: 10px;
+ }
+}

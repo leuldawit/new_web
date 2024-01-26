@@ -1,0 +1,113 @@
+header {
+
+    padding: 15px 0;
+    /* Adjust the padding as needed */
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    /* Adjust the styles for your logo */
+    max-width: 7%;
+    /* Set the maximum width of the logo */
+    margin-left: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 70px;
+    /* display: flex;
+    align-items: center;
+    background-color: #404040;
+    justify-content: center; */
+}
+
+.nav-items {
+    /* Adjust the styles for your navigation items */
+    display: flex;
+    width: 93%;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000000000;
+}
+
+.nav-items a {
+    color: #FFF;
+
+    font-family: 'Istok Web', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* Set the color of the navigation links */
+    text-decoration: none;
+    padding: 10px 20px;
+    /* Adjust the padding as needed */
+    margin: 0 10px;
+    /* Adjust the margin between navigation items */
+}
+
+
+/* Hamburger menu styles */
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 100000;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+    }
+
+    .logo {
+        margin-left: 30px;
+    }
+
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        background-color: #ffffff;
+        z-index: 1000;
+    }
+
+    .nav-items.show {
+        display: flex;
+    }
+
+    .nav-items a {
+        margin: 0;
+        padding: 15px 20px;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        margin-right: 10px;
+    }
+
+    .menu-open {
+        overflow: hidden;
+    }
+}
